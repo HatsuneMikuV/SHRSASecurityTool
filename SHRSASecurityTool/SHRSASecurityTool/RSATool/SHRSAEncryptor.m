@@ -9,6 +9,8 @@
 #import "SHRSAEncryptor.h"
 #import <Security/Security.h>
 
+#define kPassword @"qwe123qweasd"
+
 @implementation SHRSAEncryptor
 
 static NSString *base64_encode_data(NSData *data){
@@ -72,14 +74,13 @@ static NSData *base64_decode(NSString *str){
 #pragma mark - 使用'.12'私钥文件解密
 
 //解密
-+ (NSString *)decryptString:(NSString *)str privateKeyWithContentsOfFile:(NSString *)path password:(NSString *)password{
++ (NSString *)decryptString:(NSString *)str privateKeyWithContentsOfFile:(NSString *)path{
     if (!str || !path) return nil;
-    if (!password) password = @"";
-    return [self decryptString:str privateKeyRef:[self getPrivateKeyRefWithContentsOfFile:path password:password]];
+    return [self decryptString:str privateKeyRef:[self getPrivateKeyRefWithContentsOfFile:path]];
 }
 
 //获取私钥
-+ (SecKeyRef)getPrivateKeyRefWithContentsOfFile:(NSString *)filePath password:(NSString*)password{
++ (SecKeyRef)getPrivateKeyRefWithContentsOfFile:(NSString *)filePath {
     
     NSData *p12Data = [NSData dataWithContentsOfFile:filePath];
     if (!p12Data) {
@@ -87,7 +88,7 @@ static NSData *base64_decode(NSString *str){
     }
     SecKeyRef privateKeyRef = NULL;
     NSMutableDictionary * options = [[NSMutableDictionary alloc] init];
-    [options setObject: password forKey:(__bridge id)kSecImportExportPassphrase];
+    [options setObject: kPassword forKey:(__bridge id)kSecImportExportPassphrase];
     CFArrayRef items = CFArrayCreate(NULL, 0, 0, NULL);
     OSStatus securityError = SecPKCS12Import((__bridge CFDataRef) p12Data, (__bridge CFDictionaryRef)options, &items);
     if (securityError == noErr && CFArrayGetCount(items) > 0) {

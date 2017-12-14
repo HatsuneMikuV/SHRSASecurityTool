@@ -23,9 +23,8 @@
  *
  *  @param str       需要解密的字符串
  *  @param path      '.p12'格式的私钥文件路径
- *  @param password  私钥文件密码
  */
-+ (NSString *)decryptString:(NSString *)str privateKeyWithContentsOfFile:(NSString *)path password:(NSString *)password;
++ (NSString *)decryptString:(NSString *)str privateKeyWithContentsOfFile:(NSString *)path;
 
 /**
  *  加密方法

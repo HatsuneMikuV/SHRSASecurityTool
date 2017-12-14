@@ -17,6 +17,13 @@
 		7C361E471FE0E322008883AC /* SHRSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C361E461FE0E322008883AC /* SHRSAEncryptor.m */; };
 		7C361E481FE0E58D008883AC /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 7C361E401FE0E2A0008883AC /* private_key.p12 */; };
 		7C361E491FE0E58D008883AC /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 7C361E411FE0E2A0008883AC /* public_key.der */; };
+		7CFF594A1FE255E10096B69E /* SHDESEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF59491FE255E10096B69E /* SHDESEncryptor.m */; };
+		7CFF594D1FE255F70096B69E /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF594B1FE255F70096B69E /* GTMBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7CFF59521FE25BFC0096B69E /* SHMD5Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF59511FE25BFC0096B69E /* SHMD5Tool.m */; };
+		7CFF59561FE25CEC0096B69E /* SHASEEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF59551FE25CEC0096B69E /* SHASEEncryptor.m */; };
+		7CFF595D1FE25D840096B69E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF59591FE25D840096B69E /* NSString+Base64.m */; };
+		7CFF595E1FE25D840096B69E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF595A1FE25D840096B69E /* NSData+Base64.m */; };
+		7CFF595F1FE25D850096B69E /* NSData+CommonCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFF595C1FE25D840096B69E /* NSData+CommonCrypto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +42,21 @@
 		7C361E431FE0E2C9008883AC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7C361E451FE0E322008883AC /* SHRSAEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHRSAEncryptor.h; sourceTree = "<group>"; };
 		7C361E461FE0E322008883AC /* SHRSAEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHRSAEncryptor.m; sourceTree = "<group>"; };
+		7CFF59481FE255E10096B69E /* SHDESEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHDESEncryptor.h; sourceTree = "<group>"; };
+		7CFF59491FE255E10096B69E /* SHDESEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHDESEncryptor.m; sourceTree = "<group>"; };
+		7CFF594B1FE255F70096B69E /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		7CFF594C1FE255F70096B69E /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		7CFF594E1FE2565E0096B69E /* GTMDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		7CFF59501FE25BFC0096B69E /* SHMD5Tool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHMD5Tool.h; sourceTree = "<group>"; };
+		7CFF59511FE25BFC0096B69E /* SHMD5Tool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHMD5Tool.m; sourceTree = "<group>"; };
+		7CFF59541FE25CEC0096B69E /* SHASEEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHASEEncryptor.h; sourceTree = "<group>"; };
+		7CFF59551FE25CEC0096B69E /* SHASEEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SHASEEncryptor.m; sourceTree = "<group>"; };
+		7CFF59571FE25D840096B69E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		7CFF59581FE25D840096B69E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		7CFF59591FE25D840096B69E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		7CFF595A1FE25D840096B69E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		7CFF595B1FE25D840096B69E /* NSData+CommonCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CommonCrypto.h"; sourceTree = "<group>"; };
+		7CFF595C1FE25D840096B69E /* NSData+CommonCrypto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CommonCrypto.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +91,9 @@
 		7C361E281FE0DE55008883AC /* SHRSASecurityTool */ = {
 			isa = PBXGroup;
 			children = (
+				7CFF59531FE25CB00096B69E /* ASETool */,
+				7CFF594F1FE25BE30096B69E /* MD5Tool */,
+				7CFF59471FE255BC0096B69E /* DESTool */,
 				7C361E3F1FE0DE8D008883AC /* RSATool */,
 				7C361E291FE0DE55008883AC /* AppDelegate.h */,
 				7C361E2A1FE0DE55008883AC /* AppDelegate.m */,
@@ -100,6 +125,42 @@
 				7C361E431FE0E2C9008883AC /* Security.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CFF59471FE255BC0096B69E /* DESTool */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF594E1FE2565E0096B69E /* GTMDefines.h */,
+				7CFF594C1FE255F70096B69E /* GTMBase64.h */,
+				7CFF594B1FE255F70096B69E /* GTMBase64.m */,
+				7CFF59481FE255E10096B69E /* SHDESEncryptor.h */,
+				7CFF59491FE255E10096B69E /* SHDESEncryptor.m */,
+			);
+			path = DESTool;
+			sourceTree = "<group>";
+		};
+		7CFF594F1FE25BE30096B69E /* MD5Tool */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF59501FE25BFC0096B69E /* SHMD5Tool.h */,
+				7CFF59511FE25BFC0096B69E /* SHMD5Tool.m */,
+			);
+			path = MD5Tool;
+			sourceTree = "<group>";
+		};
+		7CFF59531FE25CB00096B69E /* ASETool */ = {
+			isa = PBXGroup;
+			children = (
+				7CFF59541FE25CEC0096B69E /* SHASEEncryptor.h */,
+				7CFF59551FE25CEC0096B69E /* SHASEEncryptor.m */,
+				7CFF59581FE25D840096B69E /* NSData+Base64.h */,
+				7CFF595A1FE25D840096B69E /* NSData+Base64.m */,
+				7CFF595B1FE25D840096B69E /* NSData+CommonCrypto.h */,
+				7CFF595C1FE25D840096B69E /* NSData+CommonCrypto.m */,
+				7CFF59571FE25D840096B69E /* NSString+Base64.h */,
+				7CFF59591FE25D840096B69E /* NSString+Base64.m */,
+			);
+			path = ASETool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +236,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFF595D1FE25D840096B69E /* NSString+Base64.m in Sources */,
+				7CFF594A1FE255E10096B69E /* SHDESEncryptor.m in Sources */,
+				7CFF595F1FE25D850096B69E /* NSData+CommonCrypto.m in Sources */,
+				7CFF594D1FE255F70096B69E /* GTMBase64.m in Sources */,
+				7CFF59521FE25BFC0096B69E /* SHMD5Tool.m in Sources */,
 				7C361E2E1FE0DE55008883AC /* ViewController.m in Sources */,
 				7C361E391FE0DE55008883AC /* main.m in Sources */,
+				7CFF59561FE25CEC0096B69E /* SHASEEncryptor.m in Sources */,
+				7CFF595E1FE25D840096B69E /* NSData+Base64.m in Sources */,
 				7C361E471FE0E322008883AC /* SHRSAEncryptor.m in Sources */,
 				7C361E2B1FE0DE55008883AC /* AppDelegate.m in Sources */,
 			);
